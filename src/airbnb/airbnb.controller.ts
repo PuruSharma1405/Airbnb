@@ -9,7 +9,7 @@ export class AirbnbController {
 
     @Get('dummy')
     async dummy(){
-        return 'dummy'
+        return 'dummy api'
     }
 
     @Get()
