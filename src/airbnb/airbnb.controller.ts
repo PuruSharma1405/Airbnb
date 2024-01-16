@@ -7,6 +7,11 @@ import { ListingsAndReview } from 'src/schema/airbnbschema';
 export class AirbnbController {
     constructor(private airbnbService : AirbnbService){}
 
+    @Get('dummy')
+    async dummy(){
+        return 'dummy'
+    }
+
     @Get()
     async getAllListing(
         
