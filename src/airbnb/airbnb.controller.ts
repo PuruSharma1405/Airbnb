@@ -7,15 +7,8 @@ import { ListingsAndReview } from 'src/schema/airbnbschema';
 export class AirbnbController {
     constructor(private airbnbService : AirbnbService){}
 
-    @Get('dummy')
-    async dummy(){
-        return 'dummy api'
-    }
-
     @Get()
-    async getAllListing(
-        
-    ): Promise<ListingsAndReview[]>{
+    async getAllListing(): Promise<ListingsAndReview[]>{
         return await this.airbnbService.getAllListing()
     }
 
